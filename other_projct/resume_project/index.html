@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>森林熊个人前端简历</title>
+    <meta name="keywords" content="森林熊, web前端, F2E, web前端个人简历, 前端开发" />
+    <meta name="description" content="森林熊web前端工程师个人简历">
+    <link rel="stylesheet" href="css/common/reset.css">
+    <link rel="stylesheet" href="css/common/animate.css">
+<!--    <link rel="stylesheet" href="css/index.css">-->
+    <link rel="stylesheet" href="css/index2.css">
+    <script src="js/common/jquery-1.11.3.js"></script>
+    <script src="js/common/jquery.mousewheel.js"></script>
+    <script src="js/plug/layer/layer.js"></script>
+    <script src="js/common/velocity.js"></script>
+    <script src="js/common/velocity.ui.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rN1rTvMywwSdxR6IZPL96Vz0PyN9b08w"></script>
+    
+    <script>
+        setRem();
+        window.addEventListener('orientationchange',setRem)
+        window.addEventListener('resize',setRem)
+        function setRem(){
+            var html = document.querySelector("html");
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 16 + 'px';
+        }
+        document.onkeydown = function(event){  
+            var e = event || window.event;  
+             var k = e.keyCode || e.which;  
+            if(k == 32) {  
+                return false; 
+            }
+        }; 
+        
+    </script>
+
+    
+</head>
+<body>
+<!--   loading-->
+    <div id="loading">
+        <img src="images/loading.gif" alt="">
+        <div class="loadtxt">
+            <p class="best">最佳游览器效果<br/> CHROME / 火狐 / 或升级最新至最新IE </p> 
+            <p class="per"><span class="numPer">0</span><i class="iconfont" >&#xe61d;</i></p>
+        </div>
+    </div>
+    
+    <div class="heard" style="display:none;">
+        <div class="Logo">
+        </div>
+        <div class="hNav">
+            <ul>
+                <li class="red">
+                    <span>舍</span>
+                    <i class="iconfont">&#xe609;</i>
+                </li>
+                <li>
+                    <span>我</span>
+                    <i class="iconfont">&#xe60a;</i>
+                </li>
+                <li>
+                    <span>其</span>
+                    <i class="iconfont">&#xe60b;</i>
+                </li>
+                <li>
+                    <span>谁</span>
+                    <i class="iconfont">&#xe60c;</i>
+                </li>
+            </ul>
+        </div>
+        <div class="music">
+            <audio id="V2" loop="loop" preload="auto" >
+                <source src="css/MainTitleTheme.mp3" type="audio/mpeg">
+                <source src="css/MainTitleTheme.ogg" type="audio/ogg">
+            </audio>
+        </div>
+    </div>
+<!--    page1-->
+    <div id="cont" style="display:none;">
+        <div class="pages" id="page1">
+            <div class="me"></div>
+            <div class="yunduo yunduo1"></div>
+            <div class="yunduo yunduo2"></div>
+            <div class="yunduo yunduo3"></div>
+            <div class="yunduo yunduo4"></div>
+            <div class="people"></div>
+            <div class="zhuzi"><img src="images/zhuzi.png" alt=""></div>
+            <div class="mei"><img src="images/mei.png" alt=""></div>
+            <div class="huawen"><img src="images/hua_bg.png" alt=""></div>
+        </div>
+<!--        page2-->
+        <div class="pages" id="page2">
+            <div id="skill">
+                <ul>
+                    <li style="display:block;">
+                        <div class="sk-title title1"></div>
+                        <p class="sk-cont1">熟练运用各个组件的运用及API的使用<br />实现页面布局，能把设计转成页面<br />可以把后台数据解析到页面上</p>
+                        <div class="sk-pic pic1"></div>
+                    </li>
+                    <li>
+                        <div class="sk-title title2"></div>
+                        <p class="sk-cont1">掌握jQuery<br />掌握原生JS的编程<br />注重JavaScript性能优化<br />正在学习ES6和更多前端框架<br /><br />层出不穷的框架让人兴奋，而不同框架背后的思路却在逐渐统一</p>
+                        <div class="sk-pic pic2"></div>
+                    </li>
+                    <li>
+                        <div class="sk-title title3"></div>
+                        <p class="sk-cont1">熟练运用css及css3新属性<br />掌握bootstrap框架及源码的实现<br />能让网页格式自动适应各款各大小的手机</p>
+                        <div class="sk-pic pic3"></div>
+                    </li>
+                    <li>
+                        <div class="sk-title title4"></div>
+                        <p class="sk-cont1">深刻理解Web标准<br />熟练运用html标签<br />熟悉xml及xhtml标记语言<br />熟悉HTML5特性，了解HTML5最新规范<br />可以HTML5新特性开发移动端页面</p>
+                        <div class="sk-pic pic4"></div>
+                    </li>
+                </ul>
+                <div class="sk-btn">
+                    <a class="last" href="javascript:void(0);"></a>
+                    <a class="next" href="javascript:void(0);"></a>
+                </div>
+            </div>
+           
+            <div class="modian">
+                <div class="modian1"></div>
+                <div class="modian2"></div>
+                <div class="modian3"></div>
+                <div class="modian4"></div>
+                <div class="modian5"></div>
+            </div>
+            
+            <div class="minxi"></div>
+            <div class="long"></div>
+            <div class="mingyan"></div>
+            <div class="qiang"></div>
+        </div>
+<!--        page3-->
+        <div class="pages" id="page3">
+            <div class="page3Title"><span>部分作品</span></div>
+            <div class="shang"></div>
+            <div class="works">
+                <ul>
+                    <li>
+                        <div class="works-pic dajia">
+                            <a href="../smartisan_project/index.html" target="_blank">
+                                <img src="images/dajia.png" alt="">
+                            </a>
+                        </div>
+                        <p class="works-title">Smartisan站</p>
+                        <p class="works-sub">用最新的css3 以及animation动画做的静态页面</p>
+                    </li>
+                    <li>
+                        <p class="works-title">Bootstrap 网页</p>
+                        <p class="works-sub">用Bootstrap框架开发网页</p>
+                        <div class="works-pic">
+                            <a href="../bootstrap_project/index.html" target="_blank">
+                                <img src="images/boot.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="works-pic mayplay">
+                            <a href="javascript:void(0);">
+                                <img src="images/mayplay.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="works-title">移动端应用</p>
+                        <p class="works-sub">用H5 CSS3 js 开发移动端网页 适配各种移动置备</p>
+                    </li>
+                    <li>
+                        <p class="works-title">美食城Web</p>
+                        <p class="works-sub">静态页面配合js move运动框架</p>
+                        <div class="works-pic WX">
+                            <a href="../100du_project/index.html" target="_blank">
+                                <img src="images/WX.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="liao"></div>
+            
+        </div>
+<!--        page4-->
+        <div class="pages" id="page4">
+            <div class="zhiji zhiji-text1"></div>
+            <div class="zhiji zhiji-text2"></div>
+            <div id="map"></div>
+            <div class="foot"></div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+    <script src="js/map.js"></script>
+    <script>modian();</script>
+    
+</body>
+</html>

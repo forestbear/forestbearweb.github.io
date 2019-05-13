@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="森林熊, web前端, F2E, web前端个人简历, 前端开发" />
+    <meta name="description" content="森林熊web前端工程师个人简历">
+    <title>森林熊个人主页</title>
+    <link href="web_project/ico/code.ico" rel="shortcut icon">
+    <link href="web_project/css/index.css" rel="stylesheet" />
+    <script src="web_project/js/common/particles.min.js"></script>
+    <script src="web_project/js/common/move.js"></script>
+    <script src="web_project/js/index.js"></script>
+    <script>
+        var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+        var browser = navigator.userAgent.toLowerCase();
+        var isMobile = false;
+        for (var i = 0; i < mobileAgent.length; i++) {
+            if (browser.indexOf(mobileAgent[i]) != -1) {
+                isMobile = true;
+                //alert(mobileAgent[i]); 
+                location.href = 'mobile.html';
+                break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="loading">
+            <div id="progress"></div>
+            <div class="load_area">
+                <div class="anima">
+                    <div class="loader">
+                        <div class="loader-inner line-scale-pulse-out-rapid">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="percent">最佳体验请使用右边以下浏览器观看</div>
+                <div class="killBrowser">
+                    <ul>
+                        <li class="ie"> <img src="web_project/images/IE.png" alt=""> </li>
+                        <li> <img src="web_project/images/Safari.png" alt=""> </li>
+                        <li><img src="web_project/images/Chrome.png" alt=""></li>
+                        <li><img src="web_project/images/edge.png" alt=""></li>
+                        <li><img src="web_project/images/Opera.png" alt=""></li>
+                        <li><img src="web_project/images/Firefox.png" alt=""></li>
+                        <li><img src="web_project/images/UC.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div id="nav-content">
+                <div class="nav-l">
+                    <div class="myinfo">
+                        <a href="other_projct/resume_project/index.html" target="_blank">
+                            <p>我的简历</p> <img src="web_project/images/myinfo.png" alt=""> </a>
+                    </div>
+                </div>
+                <div class="nav-r">
+                    <div class="myproject">
+                        <ul id="proList">
+                            <li>
+                                <div class="show">
+                                    <p class="showtext">扫码才能看</p> <img class="showimg" src="web_project/images/magicCube.png" alt="魔方"> </div>
+                            </li>
+                            <li>
+                                <div class="show2">
+                                    <p class="showtext">扫码才能看</p> <img class="showimg" src="web_project/images/51.png" alt="51旅游"> </div>
+                            </li>
+                            <li>
+                                <a class="fastlink" href="other_projct/bootstrap_project/index.html" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="fastlink" href="other_projct/mszz_project/index.html" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="fastlink" href="other_projct/100du_project/index.html" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="fastlink" href="other_projct/smartisan_project/index.html" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="link">
+                <ul id="link-list">
+                    <li class="link-qq"></li>
+                    <li class="link-wechat"></li>
+                    <a href="https://github.com/forestbear">
+                        <li class="github"></li>
+                    </a>
+                </ul>
+                <ul id="link-qc">
+                    <li class="qq-qc"></li>
+                    <li class="wechat-qc"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer"></div>
+        <div id="mask">
+            <div class="navList">
+                <div class="logo">
+                    <a href="http://www.colbear.me/"></a>
+                    <div class="text"> 森林熊 </div>
+                </div>
+                <div class="menuBtn">
+                    <div class="btn-menu"></div>
+                    <div class="btn-close"></div>
+                </div>
+            </div>
+            <div class="mask-left"></div>
+            <div class="time-text">
+                <p class="time">五月 29, 2017</p>
+                <h1>终有弱水替沧海，再把相思寄巫山</h1>
+                <p class="textList"> 那个笑起来眼睛弯弯成月牙，灿若星光，梨涡勾起俏皮弧度，耀如暖阳的姑娘，她恋爱了。 那个在你耳边... </p>
+            </div>
+            <div class="bird"></div>
+        </div>
+    </div>
+</body>
+
+</html>
